@@ -447,7 +447,9 @@ main{
 
 #calorie-calculator,
 #macro-calculator{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
     width: min(100%,500px);
     padding: 1em;
 }
@@ -458,7 +460,6 @@ select {
     font-size: 1.5rem;
     margin: 0 0 1.5rem;
     /*  color: var(--light-primary); */
-
 }
 
 label {
@@ -475,6 +476,14 @@ label {
     padding: 0 0 1em;
 }
 
+.macro-group{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 input[type="radio"]{
     display: none;
 }
@@ -486,8 +495,22 @@ input[type="radio"]{
     margin-left: 1em;
     font-weight: normal;
     cursor: pointer;
-
     /* color: var(--dark-primary); */
+}
+
+.macro-group label{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--light-accent);
+    border-radius: 1em;
+    height: 6em;
+    min-width: 8em;
+    /* padding: 0.3em; */
+    /* margin-left: 1em; */
+    font-weight: normal;
+    cursor: pointer;    
 }
 
 #sex{
