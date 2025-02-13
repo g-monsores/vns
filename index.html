@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"/>
+
+        <title>VNS Personal</title>
+            <meta
+                name="description"
+                content=""
+            />
+        
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/logo.svg"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="./scripts/utils.js" defer></script>
+        <script src="./index.js" defer></script>
+
+    </head>
+
+    <body>
+        <!-- <a href="#main-content" class="skip-link">Skip to main content</a> -->
+
+        <!-- Barra de navegação superior. -->
+        <header>
+            <div class="home-li">
+                <a href="#home">
+                    <img src="./assets/logo/logo.png" alt="VNS Treinos" class="logo"/>
+                </a>
+            </div>
+            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+            </button>
+
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                        </button>
+                    </li>
+                    <!-- <li class="home-li"><a href="#">Home</a></li> -->
+                    <!-- <li class="home-li">
+                        <a href="#home">
+                            <img src="./assets/logo/logo.png" alt="VNS Treinos" class="logo"/>
+                        </a>
+                    </li> -->
+                    <li><a href="#about-section">Sobre</a></li>
+                    <li><a href="#coaching-section">Consultoria</a></li>
+                    <li><a href="#calculator-section">Dieta</a></li>
+                    <li><a class="accent-link"
+                            href="https://wa.me/5521978153488?text=Fala+vine%21+Gostaria+de+saber+mais+sobre+a+consultoria%21"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Junte-se ao time</a></li>
+                </ul>
+            </nav>
+            <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+        </header>
+
+        <main>
+            <!-- Primeira secção da página. -->
+            <a href="" id="hero-section"></a>
+            <section class="hero">  
+                <div class="hero-box">
+                    <div class="hero-banner">
+                        <img
+                        height="1364"
+                        width="1364" 
+                        class="hero-img"
+                        src="./assets/img/hero-img_3.png" 
+                        alt="Campeão Mr. Rio 2024"
+                        />
+                    </div>
+                    <div class="hero-text">
+                        <h1>Lorem ipsum dolor</h1>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eaque porro quaerat! Necessitatibus soluta ea quisquam, quas est illum consequatur quod possimus harum quo debitis expedita, voluptatem cumque odit libero?</h2> 
+                        <a class="accent-link" 
+                            href="https://wa.me/5521978153488?text=Fala+vine%21+Gostaria+de+saber+mais+sobre+a+consultoria%21"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            Junte-se ao time</a>
+                    </div>      
+                </div>
+            </section>
+
+            <!-- Segunda secção da página. -->
+            <a href="" id="about-section"></a>
+            <section class="about">
+                <div class="about-title">
+                    <h2>[Sobre]</h2>
+                </div>
+                <div class="about-container">
+                    <div class="about-img"><img src="./assets/img/hero-img.jpg" alt=""></div>
+                    <div class="about-text-block"><h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam doloribus eveniet, dolore autem deserunt maxime, saepe quae tenetur, illo cum similique.</h3></div>
+                </div>
+                <div class="about-container">
+                    <div class="about-img"><img src="./assets/img/hero-img_2.jpg" alt=""></div>
+                    <div class="about-text-block"><h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque non, consequuntur quia saepe doloremque, est quaerat assumenda ab hic architecto deleniti vel quo minus amet atque dolorum, sint nostrum mollitia! Culpa fugiat sed tempore, odit illo repellat unde libero rerum id aspernatur, dolorum ducimus, animi perferendis! Quisquam ipsa magni suscipit?</h3></div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class ="reviews-container">
+                    <div class="card"><h2>[Consultoria]</h2></div>
+                </div>
+            </section>
+            
+            <a href="" id="calculator-section"></a>
+            <section class="calculator">
+                <div id ="calculator-grid" class="grid-container">
+                    <div class="container-title">
+                        <h2>Obtenha a <span style="font-weight:900">dieta ideal</span> para o seu <span style="font-weight:900">objetivo</span>
+                        </h2>
+                        <p id="calculator-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga labore odit provident, accusamus voluptate rerum aspernatur cumque ipsum odio ullam esse veniam at. Obcaecati minus consequuntur sed suscipit iusto voluptate.</p>
+                    </div>
+                    <div class="container-1">
+                        <div class ="calorie-calculator-box">
+                            <form id="calorie-calculator">
+                                <h3>Calculadora de Calorias</h3>
+                                <input type="number" name="age" id="age" placeholder="Idade" required autocomplete="off">
+                                <input type="number" name="weight" id="weight" placeholder="Peso (kg)" required autocomplete="off">
+                                <input type="number" name="inches" id="inches" placeholder="Altura (cm)" required autocomplete="off">
+                                
+                                <label for="activity_level">Nível de Atividade física semanal</label>
+                                <select name="activity_level" id="activity_level" required>
+                                <!-- <option value="">Nível de Atividade física semanal</option> -->
+                                    <option value="1.2">Pouca ou nenhuma atividade</option>
+                                    <option value="1.375">Leve (1−3 dias por semana)</option>
+                                    <option value="1.55" selected>Moderada (3−5 dias por semana)</option>
+                                    <option value="1.725">Alto (6−7 dias por semana)</option>
+                                    <option value="1.9">Extremamente ativo (duas vezes ao dia, treino pesado)</option>
+                                </select>
+                                <label for="gain_loss_amount">Objetivo</label>
+                                <select name="gain_loss_amount" id="gain_loss_amount" required>
+                                    <!-- <option value="">Objetivo</option> -->
+                                    <option value="0.6">Perder 1,0kg por semana, em média</option>
+                                    <option value="0.8">Perder 0,5kg por semana, em média</option>
+                                    <option value="1" selected>Manter meu peso atual</option>
+                                    <option value="1.2">Ganhar 0,5kg por semana, em média</option>
+                                    <option value="1.4">Ganhar 1,0kg por semana, em média</option>
+                                </select>
+                                <div class="radio-group">
+                                    <span id="sex">Sexo</span>
+                                    <input type="radio" name="sex" value="male" id="male" checked="checked"> <label for="male">Homem</label>
+                                    <input type="radio" name="sex" value="female" id="female"> <label for="female">Mulher</label>
+                                </div>
+                                <div class ="calorie-calculator-btn">
+                                    <button class="button-form" id="clear">Limpar</button>
+                                    <button class="button-form" id="submit-button" type="submit">Calcular</button>
+                                </div>
+                                <div class="calorie-result"></div>
+
+                            </form>      
+                        </div>
+                        <!-- <div class="calorie-calculator-result">
+                            <div class="calorie-result"></div>
+                            <div class ="calorie-calculator-btn-after">
+                                <button class="button-form" id="clear" onclick="">Limpar</button>
+                                <button class="button-form" id="submit" onclick="">Calcular</button>
+                            </div>
+
+                        </div> -->
+                        
+                    </div>
+
+                    <div class="container-2">
+                        <div class="macro-results">
+                            <form id="macro-calculator">
+                                <h3>Macros</h3>
+                                <div class="radio-group">
+                                    <input type="radio" name="macro-type" value="balanced" id="balanced" checked="checked">
+                                    <label class="diet-selector" for="balanced">Balanceada</label>
+                                    <input type="radio" name="macro-type" value="low-fat" id="low-fat">
+                                    <label class="diet-selector" for="low-fat">Low-Fat</label>
+                                    <input type="radio" name="macro-type" value="low-carb" id="low-carb">
+                                    <label class="diet-selector" for="low-carb">Low-Carb</label>
+                                    <input type="radio" name="macro-type" value="high-protein" id="high-protein">
+                                    <label class="diet-selector" for="high-protein">Alta Proteína</label>
+                                </div>
+                                <label for="protein">Proteínas</label>
+                                <input type="number" name="weight" id="protein" placeholder="Proteína (g)" required>
+                                <label for="fat">Gorduras</label>
+                                <input type="number" name="weight" id="fat" placeholder="Gordura (g)" required>
+                                <label for="protein">Carboidratos</label>
+                                <input type="number" name="weight" id="carbs" placeholder="Carboidrato (g)" required>
+                                <label for="meals-number">Quantidade de refeições</label>
+                                <select name="meals-number" id="meals-number" required>
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="3" selected>3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <button class="button-form" id="">Gerar Plano</button>
+                                <div id="m-results"></div>
+                            </form>
+                        </div>     
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            
+        </footer>
+
+    </body>
+
+    
+
+</html>
