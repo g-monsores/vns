@@ -124,6 +124,10 @@
                         <div class ="calorie-calculator-box">
                             <form id="calorie-calculator">
                                 <h3>Calculadora de Calorias</h3>
+                                <div class="radio-group">
+                                    <input type="radio" name="sex" value="male" id="male" checked="checked"> <label for="male">Homem</label>
+                                    <input type="radio" name="sex" value="female" id="female"> <label for="female">Mulher</label>
+                                </div>
                                 <input type="number" name="age" id="age" placeholder="Idade" required autocomplete="off">
                                 <input type="number" name="weight" id="weight" placeholder="Peso (kg)" required autocomplete="off">
                                 <input type="number" name="inches" id="inches" placeholder="Altura (cm)" required autocomplete="off">
@@ -146,11 +150,7 @@
                                     <option value="1.2">Ganhar 0,5kg por semana, em média</option>
                                     <option value="1.4">Ganhar 1,0kg por semana, em média</option>
                                 </select>
-                                <div class="radio-group">
-                                    <span id="sex">Sexo</span>
-                                    <input type="radio" name="sex" value="male" id="male" checked="checked"> <label for="male">Homem</label>
-                                    <input type="radio" name="sex" value="female" id="female"> <label for="female">Mulher</label>
-                                </div>
+                                
                                 <div class ="calorie-calculator-btn">
                                     <button class="button-form" id="clear">Limpar</button>
                                     <button class="button-form" id="submit-button" type="submit">Calcular</button>
