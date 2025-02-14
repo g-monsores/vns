@@ -166,6 +166,14 @@
                         <div class="macro-results">
                             <form id="macro-calculator">
                                 <h3>Macros</h3>
+                                <div class="macro-balance">
+                                    <label for="protein">Proteínas</label>
+                                    <label for="fat">Gorduras</label>
+                                    <label for="carbs">Carboidratos</label>
+                                    <output type="number" name="weight" id="protein"></output>
+                                    <output type="number" name="weight" id="fat"></output>
+                                    <output type="number" name="weight" id="carbs"></output>
+                                </div>
                                 <div class="macro-group">
                                     <input type="radio" name="macro-type" value="balanced" id="balanced" checked="checked">
                                     <label class="diet-selector" for="balanced">Balanceada</label>
@@ -176,12 +184,7 @@
                                     <input type="radio" name="macro-type" value="high-protein" id="high-protein">
                                     <label class="diet-selector" for="high-protein">Alta Proteína</label>
                                 </div>
-                                <label for="protein">Proteínas</label>
-                                <input type="number" name="weight" id="protein" placeholder="Proteína (g)" required>
-                                <label for="fat">Gorduras</label>
-                                <input type="number" name="weight" id="fat" placeholder="Gordura (g)" required>
-                                <label for="protein">Carboidratos</label>
-                                <input type="number" name="weight" id="carbs" placeholder="Carboidrato (g)" required>
+                                
                                 <label for="meals-number">Quantidade de refeições</label>
                                 <select name="meals-number" id="meals-number" required>
                                     <option value="1">1</option>

@@ -183,9 +183,9 @@ function calcDailyMacros() {
         carbs = (result * c_weight) / 4;
         protein = (result * p_weight) / 4;
         fat = (result * f_weight) / 9;
-        $("#carbs").val(Math.round(carbs));
-        $("#protein").val(Math.round(protein));
-        $("#fat").val(Math.round(fat)); 
+        $("#carbs").val(Math.round(carbs)+"g");
+        $("#protein").val(Math.round(protein)+"g");
+        $("#fat").val(Math.round(fat)+"g"); 
     }
     else{
         $('#calorie-calculator')[0].reset();
