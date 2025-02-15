@@ -97,7 +97,7 @@ $('#clear').on('click', function () {
     clearValues();
 });
 
-$('#macros').   click(function(){
+$('#macros').click(function(){
     calcDailyMacros();
 })
 
