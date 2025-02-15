@@ -126,13 +126,16 @@ function displayCals(){
     refreshGrid();
     $('html, body').animate({
         scrollTop: $("#results").offset().top - 160
-    }, 2000);
+    }, 1000);
     // $(".calorie-calculator-btn").hide();
     // $(".calorie-calculator-result").fadeIn("fast");
     var cal = calcDailyCals();   
     if(cal){
         $(".cal-text").remove();
-        $('.calorie-result').append('<h3 class="cal-text">Estimativa de calorias diárias: ' + cal + "Kcal</h3>").fadeIn('fast')
+        $('.calorie-result').append(
+            '<span class="cal-text">Estimativa de calorias diárias:</span>',
+            '<output class="output-cal"></output>').fadeIn('fast');
+        $('.output-cal').val(cal+"Kcal");
     } 
 }
 
