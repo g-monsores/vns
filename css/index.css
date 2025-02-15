@@ -475,6 +475,7 @@ label {
     display: flex;
     padding: 0 1em 0.5em;
     color: var(--dark-primary);
+    font-size: clamp(0.7rem, calc(1.5vw + 0.5rem), 1rem);
     font-weight: 600;
 }
 
@@ -654,7 +655,8 @@ select:focus {
     min-width: 8em;
     /* padding: 0.3em; */
     /* margin-left: 1em; */
-    font-weight: normal;
+    font-size: clamp(0.7rem, calc(1.5vw + 0.5rem), 1rem);
+    font-weight: 600;
     cursor: pointer;    
 }
 
@@ -669,14 +671,15 @@ select:focus {
 
 .calorie-result{
     display: flex;
+    width: max-content;
     align-items: center;
-    align-content: center;
+    align-self: center;
     justify-content: center;
     gap: 1em;
     padding: 0.5em;
-    margin-bottom: 1em;
-    border: 2px solid var(--light-accent);
-    border-radius: 10px;
+    margin-bottom: 2em;
+    border: 2px solid var(--dark-accent);
+    border-radius: 0;
 }
 
 .cal-text{
@@ -707,20 +710,28 @@ select:focus {
     /* background-clip: padding-box; */
 }
 
+.meals-choice{
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.meals-choice label{
+    padding: 0;
+}
+
 #meals-number{
-    display: block;
     font-family: var(--ff);
-    margin: 0 0 1.5rem;
-    width:100%;
     height: 2.5rem;
+    min-width: 4em;
     border: none;
-    /* border-bottom: 4px solid var(--colora2); */
-    padding: .5rem;
+    padding: 0 0.3em;
     border-radius: 10px;
     cursor: pointer;
     outline: none;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: clamp(0.7rem, calc(1.5vw + 0.5rem), 1rem);
     color: var(--dark-primary);
     background-color: var(--dark-body);
     background-clip: padding-box;
