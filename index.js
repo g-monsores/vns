@@ -124,6 +124,9 @@ function clearValues(){
 
 function displayCals(){
     refreshGrid();
+    $('html, body').animate({
+        scrollTop: $("#results").offset().top - 160
+    }, 2000);
     // $(".calorie-calculator-btn").hide();
     // $(".calorie-calculator-result").fadeIn("fast");
     var cal = calcDailyCals();   
