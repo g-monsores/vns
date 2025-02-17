@@ -737,7 +737,44 @@ select:focus {
 
 footer {
     grid-area: footer;
-    padding: 2em;
+    /* padding: 2em; */
+    margin-top: 2em;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 240px;
+    background-color: var(--dark-accent);
+    gap: 2em;
+}
+
+.footer-container ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 1em;
+}
+
+.footer-container a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--ff);
+    font-size: clamp(0.6rem, calc(1vw + 0.5rem), 1rem);
+    color: var(--colorbody);
+    width: 90px;
+}
+
+.copyright-text{
+    color: var(--colorbody);
+    padding-bottom: 1em;
+    font-size: clamp(0.7rem, calc(1.5vw + 0.5rem), 1rem);
 }
 
 @keyframes appear{
