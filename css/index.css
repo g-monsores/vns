@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
 :root{
 
@@ -8,11 +9,6 @@
 
     --colorbody: white;
     --dark-body:hsl(0, 0%, 90%);
-
-    /* --light-accent: hsla(225, 14%, 60%, 1);
-    --dark-accent: hsla(285, 21%, 35%, 1);
-    --light-primary: hsla(358, 18%, 39%, 1);
-    --dark-primary: hsla(307, 30%, 20%, 1); */
 
     --light-accent: hsla(225, 14%, 60%, 1);
     --dark-accent: hsla(285, 21%, 25%, 1);
@@ -43,14 +39,9 @@ body{
         "footer";
     grid-template-rows: var(--navbar-height) 1fr auto;
     font-family: var(--ff);
-    /* font: var(--p); */
-    /* font-weight: 500; */
     background-color: var(--colorbody);
-    /* color: var(--colorp); */
     min-height: 100vh;
     min-height: 100dvh;
-    /* line-height: 1.5; */
-    /* margin: auto; */
 }
 
 p
@@ -97,7 +88,19 @@ div .home-li{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    width: 100%;
 }
+
+.logo-text{
+    font-family: "Fugaz One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    color: var(--dark-accent);
+    text-decoration: none;
+}
+
 nav{
     display: flex;
 }
@@ -112,10 +115,7 @@ nav li{
     display: flex;
     text-align: center;
 }
-nav .logo{
-    display: block;
-    height: 90%;
-}
+
 nav a{
     /* font: var(--p); */
     font-size: 1em;
@@ -746,9 +746,9 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 240px;
+    height: 280px;
     background-color: var(--dark-accent);
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .footer-container ul{
@@ -758,7 +758,7 @@ footer {
     gap: 1em;
 }
 
-.footer-container a{
+.socials{
     display: flex;
     text-decoration: none;
     flex-direction: column;
@@ -770,6 +770,29 @@ footer {
     color: var(--colorbody);
     width: 90px;
 }
+
+.footer-logo .logo-text{
+    font-family: "Fugaz One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--colorbody);
+    text-decoration: none;
+    height: auto;
+}
+
+.footer-logo a{
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--ff);
+    font-size: clamp(0.6rem, calc(1vw + 0.5rem), 1rem);
+    color: var(--colorbody);
+}
+
 
 .copyright-text{
     color: var(--colorbody);
