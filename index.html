@@ -150,6 +150,16 @@
                                     <option value="1.2">Ganhar 0,5kg por semana, em média</option>
                                     <option value="1.4">Ganhar 1,0kg por semana, em média</option>
                                 </select>
+                                <!-- <div class="meals-choice"> -->
+                                <label for="meals-number">Quantidade de refeições ao dia</label>
+                                <select name="meals-number" id="meals-number" required>
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="3" selected>3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <!-- </div> -->
                                 
                                 <div class ="calorie-calculator-btn">
                                     <button class="button-form" id="clear">Limpar</button>
@@ -184,17 +194,7 @@
                                     <input type="radio" name="macro-type" value="high-protein" id="high-protein">
                                     <label class="diet-selector" for="high-protein">Alta Proteína</label>
                                 </div>
-                                <div class="meals-choice">
-                                    <label for="meals-number">Quantidade de refeições</label>
-                                    <select name="meals-number" id="meals-number" required>
-                                        <option value="1">1</option>
-                                        <option value="1">2</option>
-                                        <option value="3" selected>3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                </select>
-                                </div>
-                                
+                                                                
                                 <button class="button-form" id="">Gerar Plano</button>
                                 <div id="m-results"></div>
                             </form>

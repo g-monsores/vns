@@ -167,7 +167,7 @@ function calcDailyMacros() {
     if (macrotype==="balanced"){
         c_weight=0.6;
         f_weight=0.13;
-        p_weight=0.27;
+        p_weight=0.27;  
     }
     else if (macrotype==="low-fat"){
         c_weight=0.6;
