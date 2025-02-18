@@ -473,10 +473,12 @@ main{
 
 label {
     display: flex;
+    align-items: center;
     padding: 0 1em 0.5em;
     color: var(--dark-primary);
     font-size: clamp(0.7rem, calc(1.5vw + 0.5rem), 1rem);
     font-weight: 600;
+    gap: 1em;
 }
 
 .radio-group{
