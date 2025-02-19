@@ -93,7 +93,6 @@ $("#calorie-calculator").on("submit",function(e){
 });
 
 $('#clear').on('click', function () {
-    $(".cal-text").remove();
     clearValues();
 });
 
@@ -116,9 +115,14 @@ function refreshGrid(){
 
 function clearValues(){
     // refreshGrid(clear)
+    // $(".cal-text").remove();
     $('#calorie-calculator')[0].reset();
     $('#macro-calculator')[0].reset();
     $(".calorie-calculator-btn").fadeIn('fast');
+    $('.output-cal').val("---");
+    $("#carbs").val("---");
+    $("#protein").val("---");
+    $("#fat").val("---");
     // $(".calorie-result").hide();
 }
 
@@ -132,6 +136,7 @@ function displayCals(){
     var cal = calcDailyCals();   
     if(cal){
         $(".cal-text").remove();
+        $(".output-cal").remove();
         $('.calorie-result').append(
             '<span class="cal-text">Estimativa de calorias diárias:</span>',
             '<output class="output-cal"></output>').fadeIn('fast');
