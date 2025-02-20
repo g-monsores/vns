@@ -184,29 +184,6 @@ nav a:hover{
     display: none;
 }
 
-/* .skip-link {
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-    background-color: var(--accent-color); 
-    color: #ffffff; 
-    padding: 12px 24px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: opacity 0.3s ease;
-}
-
-.skip-link:focus {
-    opacity: 1; 
-    pointer-events: auto; 
-    outline: 3px solid #ffffff; 
-} */
-
 main{
     grid-area: main;
     display: grid;
@@ -510,14 +487,7 @@ input[type="radio"]{
     color: var(--dark-primary);
     font-weight: 600;
 }
-/* label[for="male"],
-label[for="female"]{
-    border: 1px solid#e6e6e6;
-    border-radius: 10px;
-    padding: 0.3em;
-    margin-left: 1em;
-    font-weight: normal;
-} */
+
 input[type="radio"]:checked + label{
     background-color:var(--dark-body) ;
     border: 2px solid var(--dark-primary);
@@ -527,8 +497,6 @@ input[type="radio"]:hover + label{
     transform: scale(1.05);
     /* border: 2px solid #4e37b1; */
 }
-
-
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -570,21 +538,13 @@ select:focus {
     text-align: center;
 }
 
-.calorie-calculator-btn,
-.calorie-calculator-btn-after{
+.calorie-calculator-btn{
     /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     padding: 1em;
     gap:10px
 
-}
-
-.calorie-calculator-result{
-    /* border: 1px solid blue; */
-    display: none;
-    justify-content: center;
-    padding: 1em;
 }
 
 .button-form {
@@ -711,17 +671,6 @@ select:focus {
     /* background-clip: padding-box; */
 }
 
-.meals-choice{
-    display: inline-flex;
-    align-items: center;
-    justify-content: start;
-    gap: 1em;
-    margin-bottom: 2em;
-}
-
-.meals-choice label{
-    padding: 0;
-}
 
 #meals-number{
     font-family: var(--ff);
@@ -889,8 +838,3 @@ footer {
         flex-direction: column;
     }
 }
-
-
-/* animation: appear linear;
-animation-timeline: view();
-animation-range: entry 0% cover 40%; */
